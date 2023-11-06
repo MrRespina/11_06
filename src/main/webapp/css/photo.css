@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+	/* CSS에 추가(IE에서는 동작하지 않음.) */
+	font-family: "n";
+	src: url(nanum.ttf);
+}
+
+body {
+	background-color: black;
+	background-image: url("cat3.jpg"); /*배경 넣기*/
+	background-repeat: no-repeat; /* 배경 이미지 반복 없애기 */
+	background-size: cover; /* 배경 이미지 꽉 차게 . 2000px 1000px 처럼 크기 지정도 가능.*/
+	/* html 기본 여백 없애기 */
+	margin: 0px;
+	padding: 0px;
+	background-attachment: fixed; /* fixed : 스크롤 시 배경 고정 */
+}
+
+#siteTitle {
+	color: white;
+	width: 100%; /* 가로넓이 화면 꽉차게끔 */
+}
+
+#siteMenu {
+	font-size: 30px;
+	color: white;
+	background-color: black;
+	width: 100%;
+}
+#title {
+	color: white;
+	font-size: 25px;
+	font-weight: 900;
+	text-shadow: white 0px 0px 10px /* 색 x y 퍼짐정도 순 */
+}
+
+#siteMenu {
+	font-size: 30px;
+	color: white;
+	background-color: black;
+	width: 100%;
+}
+
+#siteMenu td {
+	text-align: center;
+	width: 25%;
+	margin: 0px;
+	padding: 0px;
+	width: 25%;
+}
+
+#siteMenu a {
+	text-decoration: none;
+	color: #F6F6F6;
+	font-weight: 700;
+	/* 애니메이션 효과 */
+	transition: all 0.3s ease-in;
+}
+
+#siteMenu a:hover {
+	font-size: 35pt;
+	text-decoration: blink;
+	text-shadow: gray 0px 0px 10px;
+}
+
+#photoTBl {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 900px;
+}
+
+#photoTBl .aimage {
+	float: left;
+	border: #6B66FF solid 2px;
+	border-radius: 10px;
+	font-size: 20px;
+	background-color: white;
+	box-shadow: white 0px 0px 10px;
+	color: black;
+}
+
+#photoTBl .aimage img {
+	min-height: 200px; 
+	min-width : 200px;
+	max-width: 200px;
+	max-height: 200px;
+	box-shadow: gray 0px 0px 10px;
+	min-width: 200px;
+}

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* 주석 */
+
+/* 폰트 등록 */
+@font-face {
+	/* CSS에 추가(IE에서는 동작하지 않음.) */
+	font-family: "n";
+	src: url(nanum.ttf);
+}
+
+body {
+	background-color: black;
+	background-image: url("cat3.jpg"); /*배경 넣기*/
+	background-repeat: no-repeat; /* 배경 이미지 반복 없애기 */
+	background-size: cover; /* 배경 이미지 꽉 차게 . 2000px 1000px 처럼 크기 지정도 가능.*/
+	/* html 기본 여백 없애기 */
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	background-color: blue;
+	font-family: n; /*폰트 등록 여러개 가능함. 기본 글씨체는 이걸로 하겠단 뜻*/
+	color: maroon; /* 글씨 색 */
+}
+
+#siteTitle {
+	color: white;
+	width: 100%; /* 가로넓이 화면 꽉차게끔 */
+}
+
+#siteMenu {
+	font-size: 30px;
+	color: white;
+	background-color: black;
+	width: 100%;
+}
+
+#siteMenu td {
+	text-align: center;
+	width: 25%;
+	margin: 0px;
+	padding: 0px;
+	width: 25%;
+}
+
+#siteMenu a {
+	text-decoration: none;
+	color: #F6F6F6;
+	font-weight: 700;
+	/* 애니메이션 효과 */
+	transition: all 0.3s ease-in;
+}
+
+#siteMenu a:hover {
+	font-size: 35pt;
+	text-decoration: blink;
+	text-shadow: gray 0px 0px 10px;
+}
+
+#siteTitle2 {
+	font-weight: 900;
+	text-shadow: white 0px 0px 10px /* 색 x y 퍼짐정도 순 */
+}
+
+#siteContentArea {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+#siteContentArea img {
+	box-shadow: black 5px 5px 5px;
+	width: 100%;
+	border: black solid 10px; /* solid dotted dashed double */
+	border-radius: 10px;
+}
+

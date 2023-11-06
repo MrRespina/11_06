@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>h1_css.html</title>
+<style type="text/css">
+h1 {
+	background-color: black
+}
+
+#h1_1 {
+	background-color: violet
+}
+
+.sh {
+	border: dashed;
+	border-color: blue;
+}
+</style>
+</head>
+<body>
+	<!-- 
+		CSS (Cascading Style sheet)
+		HTML DOM 객체에 디자인 부여
+		
+		위치 :
+			1) DOM 객체의 속성 형태
+			2) .html 파일 내부 <head></head>안의 <title>아래쪽으로
+			3) .css 파일을 따로 만들어서 원하는 html에 적용 (주력이다.)
+		
+		문법 :
+			선택자 {
+				속성명 : 값;
+				속성명 : 값;
+			}
+			
+		선택자(Selector) :
+			1. 태그명 : 태그명에 속하는 거 전부 다.
+			2. #id명 : id에 지정해놓은 값
+			3. .class명 : class로 지정한 값
+			
+			4. 선택자,선택자, ... : 선택자 여러개
+			5. 선택자 선택자 ... : 내부 선택 #apple인 테이블 안의 tr(#apple tr)
+			6. 선택자:상태		: #apple:hover
+ 	-->
+
+	<h style="color:red">수면부족</h>
+	<h1 style="text-shadow: gray 3px 3px 3px; color: orange">에흏</h1>
+	<h1 id="h1_1">피곤해</h1>
+	<span class="sh">span은 해당 영역만 차지</span>
+	<p>
+	<h2 class="sh">여기는 h2</h2>
+
+</body>
+</html>

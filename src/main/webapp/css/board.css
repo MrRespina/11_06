@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* 주석 */
+
+/* 폰트 등록 */
+@font-face {
+	/* CSS에 추가(IE에서는 동작하지 않음.) */
+	font-family: "n";
+	src: url(nanum.ttf);
+}
+
+body {
+	background-color: black;
+	background-image: url("cat3.jpg"); /*배경 넣기*/
+	background-repeat: no-repeat; /* 배경 이미지 반복 없애기 */
+	background-size: cover; /* 배경 이미지 꽉 차게 . 2000px 1000px 처럼 크기 지정도 가능.*/
+	/* html 기본 여백 없애기 */
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	background-color: blue;
+	font-family: n; /*폰트 등록 여러개 가능함. 기본 글씨체는 이걸로 하겠단 뜻*/
+	color: maroon; /* 글씨 색 */
+}
+
+#siteTitle {
+	color: white;
+	width: 100%; /* 가로넓이 화면 꽉차게끔 */
+}
+
+#siteMenu {
+	font-size: 30px;
+	color: white;
+	background-color: black;
+	width: 100%;
+	margin-bottom: 150px;
+}
+
+#siteMenu td {
+	text-align: center;
+	width: 25%;
+	margin: 0px;
+	padding: 0px;
+	width: 25%;
+}
+
+#siteMenu a {
+	text-decoration: none;
+	color: #F6F6F6;
+	font-weight: 700;
+	/* 애니메이션 효과 */
+	transition: all 0.3s ease-in;
+}
+
+#siteMenu a:hover {
+	font-size: 35pt;
+	text-decoration: blink;
+	text-shadow: gray 0px 0px 10px;
+}
+
+#boardMenu {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 200px;
+	background-color:transparent;
+	margin-top: 20px;
+	border: red dashed 5px;
+	border-radius: 5px;
+	box-shadow: maroon 0px 0px 10px inset;
+}
+
+#pic img {
+	min-height: 150px;
+	min-width: 150px;
+	max-width: 150px;
+	max-height: 150px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+#mini {
+	margin-left: 5px;
+	text-align: left;
+}
+
+#bottomline {
+	text-align: right;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+#maintext {
+	color: white;
+	text-shadow: black 0px 0px 5px;
+	vertical-align: top;
+	font-size: 22px;
+	padding: 10px;
+	max-width: 472px;
+	overflow: hidden;
+	white-space: nowrap; /* 글자를 어떻게 둘 지 정할 떄 > 벗어나는 내용 상관없이 한줄 표시! */
+	text-overflow: ellipsis; /* 글자가 텍스트창 밖으로 넘어가면 ... 처리*/
+}
+
+textarea{
+	
+	width: 472px;
+	height: 155px;
+	background-color: white;
+	color: black;
+	outline : none;
+	
+}
+
+textarea:focus{
+	background-color: black;
+	color:white;
+}
+
+/*
+	HTML : 웹사이트 제작 > 디자인 부족, 이벤트 처리 부족
+	
+	HTML : 뼈대
+	CSS : 디자인
+	JavaScript : 이벤트 처리 > 프로그래밍 언어 기능 없음.(if,for,계산,DB Connection 등?)
+	
+	Servlet
+		Java프로그램
+		Client가 홈페이지 열어달라고 요청하면 HTML+CSS 만들어서 응답해주는 프로그램.
+		JDK가 설치된 WAS에서 실행
+		내 컴퓨터를WAS로 만들어주는 프로그램 > tomcat
+*/
